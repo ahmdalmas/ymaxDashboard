@@ -43,7 +43,7 @@
   [{
     name: "dark",
     "class": "dark",
-    checked: false
+    checked: true
   }, {
     name: "semiDark",
     "class": "semiDark",
