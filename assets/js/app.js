@@ -68,10 +68,10 @@
 
   // Theme Change by Header Button
   $("#themeMood").on("click", function () {
-    if (currentTheme === "light") {
-      currentTheme = "dark";
-    } else {
+    if (currentTheme === "dark") {
       currentTheme = "light";
+    } else {
+      currentTheme = "dark";
     }
     localStorage.theme = currentTheme;
     location.reload();
@@ -517,6 +517,9 @@
       password: {
         required: "Enter your password",
         minlength: "Password should contain minimum 6 character"
+      },
+      current_password: {
+        required: "Enter your current password"
       },
       confirm_password: {
         required: "Enter your password",
